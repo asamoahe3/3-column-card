@@ -6,4 +6,4 @@
 
 Thanks for checking out this front-end coding challenge.
 
-![Click here to preview the solution live](https://3-grid-card.netlify.app/)
+Click here to preview the solution live [https://3-grid-card.netlify.app/]
