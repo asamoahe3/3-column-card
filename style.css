@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-ligit-gray: hsl(0, 0%, 95%);
+}
+
+body {
+  background-color: var(--transparent-white);
+  font-family: "Lexend Deca", sans-serif;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--very-ligit-gray);
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.5em;
+  text-align: left;
+  font-weight: 100;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.container .card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 920px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  border-radius: 20px;
+}
+
+/*global card*/
+.container .card .card-item {
+  color: var(--transparent-white);
+  padding: 3.5em;
+}
+
+/*sedans component*/
+.container .card .sedans {
+  background-color: var(--bright-orange);
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.container .card .sedans .btn {
+  margin-top: 5em;
+}
+
+.container .card .sedans .btn a {
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 1em;
+  color: var(--bright-orange);
+}
+
+.container .card .sedans .btn a:hover {
+  background-color: var(--bright-orange);
+  border: 2px solid #fff;
+  transition: 0.5s;
+  color: #fff;
+}
+
+/*suvs component*/
+.container .card .suvs {
+  background-color: var(--dark-cyan);
+}
+
+.container .card .suvs .btn {
+  margin-top: 5em;
+}
+
+.container .card .suvs .btn a {
+  background-color: #fff;
+  color: var(--dark-cyan);
+  border-radius: 30px;
+  padding: 1em;
+}
+
+.container .card .suvs .btn a:hover {
+  background-color: var(--dark-cyan);
+  border: 2px solid #fff;
+  transition: 0.5s;
+  color: #fff;
+}
+
+/*luxury component*/
+.container .card .luxury {
+  background-color: var(--very-dark-cyan);
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.container .card .luxury .btn {
+  margin-top: 5em;
+}
+
+.container .card .luxury .btn a {
+  background-color: #fff;
+  color: var(--very-dark-cyan);
+  border-radius: 30px;
+  padding: 1em;
+}
+
+.container .card .luxury .btn a:hover {
+  background-color: var(--very-dark-cyan);
+  border: 2px solid #fff;
+  transition: 0.5s;
+  color: #fff;
+}
+
+@media all and (max-width: 760px) {
+  .container {
+    display: block;
+    margin-top: 800px;
+  }
+  .container .card {
+    position: relative;
+    padding: 2em;
+    display: block;
+    width: auto;
+  }
+  .container .card .luxury {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .container .card .sedans {
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 10px;
+  }
+}
